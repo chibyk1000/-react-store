@@ -1,0 +1,85 @@
+@use "hero";
+@use "trusted";
+@use "benefits";
+@use "product";
+@use "footer";
+@use "cart";
+
+@use "account";
+@use "admin";
+
+@use "singleproduct";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+:root {
+  --primary-color: #0f151c;
+  --primary-color-fade: #1f2c3aaf;
+  --secondary-color: #ec6902;
+  --secondary-color-dark: #0f151c;
+  --secondary-color1: #764abc8a;
+  --white: #fefefe;
+}
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+nav{
+  a{
+    color: white;
+    margin: 0 1rem;
+  }
+}
+
+.drop-link{
+  color: var(--secondary-color);
+}
+.active {
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+.menu {
+  display: none;
+}
+
+
+
+
+
+
+
+// .page{
+//   margin-top: 6rem;
+// }
+
+.MuiFormLabel-root.Mui-focused {
+  color: var(--primary-color) !important;
+}
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: var(--primary-color) !important;
+}
+
+
+
+.react-logo {
+  animation: rotate 3s linear infinite;
+  width: 3rem;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.side-link{
+  color: var(--primary-color) !important;
+padding:2px; 
+  &:hover{
+    background-color: var(--secondary-color) !important;
+    color:white !important;
+  }
+}
